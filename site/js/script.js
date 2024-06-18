@@ -1301,3 +1301,13 @@
 		}
 	});
 }());
+
+function scrollToSection() {
+    // Espera até que a página tenha carregado completamente
+    window.addEventListener('load', function() {
+      const element = document.getElementById('pizza');
+      if (element) {	
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
