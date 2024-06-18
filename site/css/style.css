@@ -100,7 +100,7 @@ body {
 	font-size: 15px;
 	line-height: 1.6;
 	font-weight: 400;
-	letter-spacing: .075em;
+	letter-spacing: .070em;
 	color: #2e2e2e;
 	background-color: #ffffff;
 	-webkit-text-size-adjust: none;
@@ -172,6 +172,13 @@ h2,
 	}
 }
 
+@media (min-width: 320px) {
+	h2,
+	.heading-2 {
+		font-size: 32px;
+	}
+}
+
 @media (min-width: 992px) {
 	h2,
 	.heading-2 {
@@ -191,6 +198,7 @@ h3,
 	font-size: 30px;
 	line-height: 1.1;
 	font-weight: 400;
+	margin-top: -30px;
 }
 
 @media (min-width: 768px) {
@@ -738,6 +746,7 @@ a[href*='tel'], a[href*='mailto'] {
 	letter-spacing: .05em;
 	font-weight: 400;
 	text-transform: none;
+	padding: 20px;
 }
 
 .cta-modern-title-2 {
@@ -1768,6 +1777,18 @@ button {
 	.button-lg {
 		min-width: 276px;
 		padding: 30px 55px;
+	}
+}
+
+@media (min-width: 320px) {
+	.button-lg {
+		min-width: 276px;
+		padding: 20px;
+		margin: 20px;
+	}
+
+	.swiper-title {
+		font-weight: 300;
 	}
 }
 
@@ -3431,7 +3452,7 @@ h4 + .rd-form {
 	font-size: 14px;
 	line-height: 1.71;
 	letter-spacing: .1em;
-	color: #fa90ce;
+	color: #c5378a;
 }
 
 .list-category-item a {
@@ -3924,7 +3945,7 @@ html.boxed body {
 * Offsets
 */
 * + p {
-	margin-top: 15px;
+	margin-top: 0px;
 }
 
 * + img {
@@ -4297,7 +4318,7 @@ h3 + .big {
 .section-md,
 .section-xl,
 .section-xxl {
-	padding: 50px 0;
+	padding: 20px 0;
 }
 
 .section-collapse + .section-collapse {
@@ -4334,7 +4355,7 @@ html [class*='section-'].section-top-0 {
 	}
 		
 	.section-xxl {
-		padding: 100px 0;
+		padding: 10px 0;
 	}
 	[class*='section-'].section-bottom-md-70 {
 		padding-bottom: 70px;
@@ -4352,7 +4373,7 @@ html [class*='section-'].section-top-0 {
 		padding-bottom: 90px;
 	}
 	.section-md {
-		padding: 80px 0;
+		padding: 20px;
 	}
 	.section-lg {
 		padding: 90px 0;
@@ -4361,7 +4382,7 @@ html [class*='section-'].section-top-0 {
 		padding: 100px 0;
 	}
 	.section-xxl {
-		padding: 120px 0;
+		padding: 70px 0;
 	}
 }
 
@@ -4559,6 +4580,7 @@ html [class*='section-'].section-top-0 {
 */
 .bg-default {
 	background-color: #ffffff;
+	margin-top: 30px;
 }
 
 .bg-primary {
@@ -7134,11 +7156,12 @@ html.tablet .ui-to-top {
 	flex-shrink: 0;
 	width: 100%;
 	height: 100%;
-	white-space: nowrap;
+	
 }
 
 .swiper-slide-caption {
 	width: 100%;
+	height: 100%;
 	background: rgba(0, 0, 0, 0.5); /* Optional: dark overlay for better text visibility */
 	white-space: normal;
 }
@@ -7314,7 +7337,7 @@ html.tablet .ui-to-top {
 }
 
 .swiper-slider-2 .swiper-title {
-	font-weight: 700;
+	font-weight: 500;
 }
 
 .swiper-slider-2 .swiper-text {
